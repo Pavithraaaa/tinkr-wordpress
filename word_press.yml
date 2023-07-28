@@ -28,6 +28,8 @@ services:
       - 80:80
     restart: always
     x-tinkr:
+      cpu: 512
+      memory: 512
       environment: 
         -  WORDPRESS_DB_HOST=<hostname:db>
       load_balancer:
@@ -40,6 +42,7 @@ services:
           port: 80
           path: /
           interval: 120
+          success_code: "301-302"
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_USER=wordpress
