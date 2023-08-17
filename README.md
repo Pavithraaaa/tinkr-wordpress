@@ -1,1 +1,1 @@
-To try it out without hassle - [https://app.tinkr.cloud/login/]
+To try it out without hassle - Run it on Tinkr.
