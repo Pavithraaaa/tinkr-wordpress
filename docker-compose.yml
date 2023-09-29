@@ -12,7 +12,7 @@ services:
       load_balancer:
         tenancy: dedicated
         type: network
-        #network: private
+        network: private
     environment:
       - MYSQL_ROOT_PASSWORD=somewordpress
       - MYSQL_DATABASE=wordpress
