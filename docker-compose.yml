@@ -10,7 +10,7 @@ services:
     restart: always
     x-tinkr:
       load_balancer:
-        tenancy: dedicated
+        tenancy: shared
         type: network
         network: private
     environment:
